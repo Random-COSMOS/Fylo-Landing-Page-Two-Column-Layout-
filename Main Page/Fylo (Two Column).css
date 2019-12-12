@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(240, 75%, 98%);
+}
+
+#header{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+#header img{
+    width: 130px;
+    height: 40px;
+}
+
+.extra{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.extra li:not(:last-of-type){
+    padding-right: 40px;
+}
+
+.extra a{
+    color: hsl(243, 87%, 12%);
+}
+
+a,
+a:visited{
+    font-family: "open sans";
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#content1{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+
+#content1 img{
+    width: 490px;
+    height: 320px;
+    margin-bottom: 150px;
+}
+
+h1{
+    font-family: raleway;
+    color: hsl(243, 87%, 12%);
+    font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+
+article{
+    color: hsl(243, 87%, 12%);
+    font-family: "open sans";
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+#content1 input[type="email"]{
+    all: unset;
+    border: 2px solid hsl(0, 0%, 75%);
+    padding: 10px 20px;
+    font-family: "open sans";
+    font-size: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#content1 input[type="submit"]{
+    all: unset;
+    padding: 12px 40px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-family: "open sans";
+    font-size: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+    transition: 0.5s;
+}
+
+#content1 input[type="submit"]:hover{
+    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+}
+
+#content1 input[type="email"]:focus{
+    border: 2px solid darkgray;
+}
+
+#content2{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    margin-bottom: 50px;
+}
+
+#content2 img{
+    width: 380px;
+    height: 300px;
+    position: relative;
+    top: 80px;
+}
+
+#content2 .para2 img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+
+#content2 a, #content2 a:visited{
+    color: hsl(170, 45%, 43%);
+    padding-bottom: 3px;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+}
+
+#content2 a:hover{
+    text-decoration: none;
+}
+
+.quotation{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 2px 2px 5px lightgray, -2px -2px 5px lightgray;
+    position: relative;
+    top: 20px;
+    padding: 10px 10px;
+}
+
+.quotation .img1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#content2 .para2 .name .img2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.quotation p{
+    color: hsl(243, 87%, 12%);
+    font-family: "open sans";
+    font-size: 15px;
+}
+
+.name{
+    display: flex;
+}
+
+.name .mainname{
+    font-weight: 700;
+}
+
+.nname{
+    align-self: center;
+}
+
+.nname .a{
+    font-size: 10px;
+}
+
+.footer{
+    background-color: hsl(238, 22%, 44%);
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    color: hsl(240, 75%, 98%);
+    font-family: "open sans";
+    font-size: 12px;
+    max-width: 360px;
+    opacity: 0.75;
+}
+
+.brief, .get{
+    flex: 1;
+}
+
+.get{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.brief h2{
+    color: hsl(240, 75%, 98%);
+    font-family: raleway;
+    margin-bottom: 10px;
+}
+
+.get input[type="email"]{
+    border: none;
+    padding: 10px 20px;
+    width: 350px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 0;
+    box-shadow: 1px 1px 5px black;
+}
+
+.get input[type="email"]:focus{
+    box-shadow: 1px 1px 2px black;
+}
+
+.get input[type="submit"]{
+    border: none;
+    padding: 10px 15px;
+    width: 155px;
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 5px;
+    color: white;
+    font-family: "open sans";
+    opacity: 0.75;
+    box-shadow: 1px 1px 5px black;
+}
+
+footer{
+    padding: 60px 50px;
+    background-color: hsl(243, 87%, 12%);
+    height: auto;
+}
+
+.column{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > img{
+    width: 130px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.col{
+    color: hsl(240, 75%, 98%);
+    font-family: "open sans";
+    font-size: 12px;
+}
+
+.col lo,.col a{
+    opacity: 0.75;
+    color: hsl(240, 75%, 98%);
+    font-size: 12px;
+}
+
+.col ul{
+    list-style: none;
+}
+
+.one > img{
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+}
+
+.two li,.three li{
+    margin-bottom: 10px;
+}
+
+.four img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.four img:not(:last-of-type){
+    padding-right: 10px;
+}
